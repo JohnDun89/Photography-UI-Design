@@ -1,7 +1,8 @@
 .App {
   text-align: center;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+}
 
 #top-level-home-container {
   background-color: gray;
@@ -12,8 +13,10 @@
   padding: 10px;
   display: flex;
   flex-direction: row;
-  -ms-flex-align: stretch; }
+  -ms-flex-align: stretch;
+}
 
 .component {
   background-color: firebrick;
-  width: 50%; }
+  width: 50%;
+}

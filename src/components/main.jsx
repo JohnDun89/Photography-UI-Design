@@ -11,7 +11,6 @@ class Main extends React.Component {
     render() {
         return (
             <div id="top-level-home-container">
-                <h1>Hiya Pal</h1>
                 < LeftComponent />
                 < RightComponent />
             </div>
