@@ -7,7 +7,7 @@ class LeftComponent extends React.Component {
     }
     render() {
         return (
-            <div className="component">
+            <div className="component" id="left">
                 <h1>
                     Hey I'm on the left.
                 </h1>

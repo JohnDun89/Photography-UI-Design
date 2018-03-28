@@ -7,7 +7,7 @@ class RightComponent extends React.Component {
     }
     render() {
         return (
-            <div className="component">
+            <div id="right">
                 <h1>
                     Hey I'm on the right. 
                 </h1>
