@@ -1,15 +1,17 @@
 import  React  from "react";
 
-class  extends Component {
+class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = {  };
     }
     render() {
         return (
-            
+            <div>
+                <h1>Hiya Pal</h1>
+            </div>
         );
     }
 }
 
-export default ;
+export default Main;
