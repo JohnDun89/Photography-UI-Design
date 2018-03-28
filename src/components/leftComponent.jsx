@@ -1,19 +1,19 @@
 import React from 'react';
 
-class RightComponent extends React.Component {
+class LeftComponent extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {  };
+        this.state = {};
     }
     render() {
         return (
             <div className="component">
                 <h1>
-                    Hey I'm on the right. 
+                    Hey I'm on the left.
                 </h1>
             </div>
         );
     }
 }
 
-export default RightComponent;
+export default LeftComponent;

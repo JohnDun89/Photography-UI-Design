@@ -1,4 +1,7 @@
 import  React  from "react";
+import RightComponent from "./rightComponent.jsx";
+import LeftComponent from "./leftComponent.jsx";
+
 
 class Main extends React.Component {
     constructor(props) {
@@ -7,8 +10,10 @@ class Main extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div id="top-level-home-container">
                 <h1>Hiya Pal</h1>
+                < LeftComponent />
+                < RightComponent />
             </div>
         );
     }
