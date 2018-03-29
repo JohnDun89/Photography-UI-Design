@@ -1,4 +1,5 @@
 import React from 'react';
+import MainArrows from './mainArrows.jsx'
 
 class LeftContentBox extends React.Component {
     constructor(props) {
@@ -8,6 +9,8 @@ class LeftContentBox extends React.Component {
     render() {
         return (
             <div className="parent" id="left-content-box">
+                < MainArrows />
+                
                 <h1>Hello</h1>
             </div>
         );
