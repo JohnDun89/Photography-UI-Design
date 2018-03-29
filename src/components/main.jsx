@@ -9,6 +9,7 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
+            folioNumber: null,
             DisplayFolioOne: false,
             DisplayFolioTwo: false,
             DisplayImageContent: false
@@ -17,8 +18,9 @@ class Main extends React.Component {
         this.imageDisplayChange = this.imageDisplayChange.bind(this)
     }
 
-    imageDisplayChange(){
+    imageDisplayChange(folioNumber){
         console.log('chage triggered')
+        console.log(folioNumber)
 
     }
 
@@ -30,7 +32,7 @@ class Main extends React.Component {
     )
         return (
             <div  id="top-level-home-container">
-                < LeftComponent action={this.imageDisplayChange}/>
+                < LeftComponent  action={this.imageDisplayChange}/>
                 <CSSTransitionGroup
                     transitionEnter={true}
                     transitionName="introduction"
