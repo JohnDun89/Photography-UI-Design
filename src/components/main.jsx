@@ -8,8 +8,20 @@ import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 class Main extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {  };
+        this.state = { 
+            DisplayFolioOne: false,
+            DisplayFolioTwo: false,
+            DisplayImageContent: false
+         };
+
+        this.imageDisplayChange = this.imageDisplayChange.bind(this)
     }
+
+    imageDisplayChange(){
+        console.log('chage triggered')
+
+    }
+
     render() {
         const pictureBackground = [1].map((number) => 
             <div className="parent" key={number.toString()}>
@@ -18,7 +30,7 @@ class Main extends React.Component {
     )
         return (
             <div  id="top-level-home-container">
-                < LeftComponent />
+                < LeftComponent action={this.imageDisplayChange}/>
                 <CSSTransitionGroup
                     transitionEnter={true}
                     transitionName="introduction"

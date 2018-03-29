@@ -12,7 +12,7 @@ class LeftComponent extends React.Component {
             <div className="component" id="left">
                 <h1>
                    <Title />
-                    <LeftContentBox />
+                    <LeftContentBox action={this.props.action}/>
                 </h1>
             </div>
         );

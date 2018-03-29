@@ -5,6 +5,11 @@ class RightComponent extends React.Component {
         super(props);
         this.state = {  };
     }
+
+   // here I need to toggle whether images are displayed or not. 
+
+
+   
     render() {
         return (
             <div  id="right">
