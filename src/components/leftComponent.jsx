@@ -1,4 +1,5 @@
 import React from 'react';
+import LeftContentBox from './leftContentBox.jsx';
 
 class LeftComponent extends React.Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class LeftComponent extends React.Component {
             <div className="component" id="left">
                 <h1>
                     Hey I'm on the left.
+                    < LeftContentBox />
                 </h1>
             </div>
         );

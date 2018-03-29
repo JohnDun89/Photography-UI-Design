@@ -23,10 +23,10 @@ class Main extends React.Component {
                     transitionEnter={true}
                     transitionName="introduction"
                     transitionAppear={true}
-                    transitionAppearTimeout={1500}
+                    transitionAppearTimeout={2000}
 
-                    transitionLeaveTimeout={1500}
-                    transitionEnterTimeout={1500}
+                    transitionLeaveTimeout={2000}
+                    transitionEnterTimeout={2000}
                 >
                 {pictureBackground}
                 </CSSTransitionGroup >
