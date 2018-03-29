@@ -28,6 +28,18 @@
   width: 30%;
   height: 70%; }
 
+#main-arrow-container {
+  background-color: honeydew;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  margin: 5px; }
+
+#main-arrow-container h2 {
+  margin: 5%;
+  padding: 10px; }
+
 #title {
   background-color: honeydew;
   margin-left: 10%; }
