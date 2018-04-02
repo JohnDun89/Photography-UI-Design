@@ -5,32 +5,37 @@ class LeftContentBox extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            arrowDisplay: true
+            arrowDisplay: false
          };
         this.folioOneClick = this.folioOneClick.bind(this)
         this.folioTwoClicked = this.folioTwoClicked.bind(this)
         this.arrows = this.arrows.bind(this)
+        this.setArrowStateTrue = this.setArrowStateTrue.bind(this)
     }
 
     folioOneClick () {
         this.props.action(1)
-
+        this.setArrowStateTrue()
     }
 
     folioTwoClicked () {
         this.props.action(2)
+        this.setArrowStateTrue()
     }
+
+    setArrowStateTrue (){
+        this.setState({arrowDisplay: true})
+    }
+
 
     arrows () {
         if (this.state.arrowDisplay === true) {
             console.log("true")
-            return (
-                
+            return (             
                 < MainArrows />
             )
         }
     }
-
 
     render() {
         return (
