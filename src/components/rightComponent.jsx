@@ -1,4 +1,5 @@
 import React from 'react';
+import ImageContainer from './imageContainer.jsx'
 
 class RightComponent extends React.Component {
     constructor(props) {
@@ -14,7 +15,9 @@ class RightComponent extends React.Component {
         return (
             <div  id="right">
                 <h1>
-                    Hey I'm on the right. 
+                    <div id="image-container">
+                    < ImageContainer />
+                   </div>
                 </h1>
             </div>
         );

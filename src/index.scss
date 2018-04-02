@@ -53,9 +53,12 @@
 }
 
 #right{
-width: 100%;
-height: 100%;
-background-color: darkred;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+  align-items: center;
+  // margin-top: -25%;
 }
 
 .introduction-appear {
@@ -65,4 +68,21 @@ background-color: darkred;
 .introduction-appear.introduction-appear-active {
     transform: translate3d(0, 0, 0);
   transition: transform 2s ease-in-out;
+}
+
+img {
+  width: 43%;
+  height: auto;
+}
+
+#image-container {
+  position: fixed;
+  margin-left: -17%;
+  margin-top: -17%;
+  width:120%;
+  height: 120%;
+}
+
+#picture {
+
 }
