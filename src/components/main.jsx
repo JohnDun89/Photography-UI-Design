@@ -18,10 +18,9 @@ class Main extends React.Component {
         this.imageDisplayChange = this.imageDisplayChange.bind(this)
     }
 
-    imageDisplayChange(folioNumber){
-        console.log('chage triggered')
-        console.log(folioNumber)
-
+    imageDisplayChange(number){
+        console.log(this.state.folioNumber)
+        this.setState({folioNumber : number})
     }
 
     render() {
@@ -38,7 +37,6 @@ class Main extends React.Component {
                     transitionName="introduction"
                     transitionAppear={true}
                     transitionAppearTimeout={2000}
-
                     transitionLeaveTimeout={2000}
                     transitionEnterTimeout={2000}
                 >
