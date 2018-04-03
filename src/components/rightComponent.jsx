@@ -9,9 +9,10 @@ class RightComponent extends React.Component {
 
    // here I need to toggle whether images are displayed or not. 
 
-
    
     render() {
+        console.log("hey", this.props)
+
         return (
             <div  id="right">
                 <h1>

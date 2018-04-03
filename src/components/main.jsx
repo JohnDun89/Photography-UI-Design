@@ -9,29 +9,38 @@ class Main extends React.Component {
     constructor(props) {
         super(props);
         this.state = { 
-            folioNumber: null,
+            folioNumber: 1,
             DisplayFolioOne: false,
             DisplayFolioTwo: false,
             DisplayImageContent: false
          };
 
         this.imageDisplayChange = this.imageDisplayChange.bind(this)
+        this.buttonPressed = this.buttonPressed.bind(this)
     }
 
     imageDisplayChange(number){
         console.log(this.state.folioNumber)
-        this.setState({folioNumber : number})
+        // this.setState({folioNumber : number})
+    }
+
+    buttonPressed( ) {
+        console.log("beep")
+        if (this.state !== 7) {
+            this.setState((state) => ({folioNumber: state.folioNumber + 1 }))
+        } 
+        console.log(this.state.folioNumber)
     }
 
     render() {
         const pictureBackground = [1].map((number) => 
             <div className="parent" key={number.toString()}>
-                < RightComponent />
+                < RightComponent button={this.state.folioNumber} />
         </div>
     )
         return (
             <div  id="top-level-home-container">
-                < LeftComponent  action={this.imageDisplayChange}/>
+                < LeftComponent  action={this.imageDisplayChange} back={this.buttonPressed} forward={this.props.back}/>
                 <CSSTransitionGroup
                     transitionEnter={true}
                     transitionName="introduction"

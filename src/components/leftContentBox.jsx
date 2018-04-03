@@ -36,7 +36,7 @@ class LeftContentBox extends React.Component {
         if (this.state.arrowDisplay === true) {
             console.log("true")
             return (             
-                < MainArrows back={this.back} forward={this.forward} />
+                < MainArrows back={this.props.back} forward={this.props.forward} />
             )
         }
     }
