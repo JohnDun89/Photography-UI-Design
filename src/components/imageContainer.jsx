@@ -4,12 +4,13 @@ class ImageContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = { folioOne: false,
-         folioTwo: false};
+                       folioTwo: false
+        };
 
          this.folioOneRender = this.folioOneRender.bind(this)
     }
 
-    portfolioOne = []
+   
 
 
     folioOneRender(image) {
@@ -21,9 +22,12 @@ class ImageContainer extends React.Component {
     }
 
     render() {
+
+       const portfolioOne = ["./images/sophie.jpg"]
+
         return (
             <div>
-                    {this.folioOneRender("./images/sophie.jpg")}
+                    {this.folioOneRender(portfolioOne[0])}
             </div>
         );
     }

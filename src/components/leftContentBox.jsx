@@ -27,12 +27,16 @@ class LeftContentBox extends React.Component {
         this.setState({arrowDisplay: true})
     }
 
+    back () {
+        console.log("back pressed")
+    }
+
 
     arrows () {
         if (this.state.arrowDisplay === true) {
             console.log("true")
             return (             
-                < MainArrows />
+                < MainArrows back={this.back} forward={this.forward} />
             )
         }
     }
