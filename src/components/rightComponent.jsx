@@ -11,13 +11,14 @@ class RightComponent extends React.Component {
 
    
     render() {
-        console.log("hey", this.props)
+        console.log("hey", this.props.button)
+
 
         return (
             <div  id="right">
                 <h1>
                     <div id="image-container">
-                    < ImageContainer />
+                    < ImageContainer number={this.props.button}/>
                    </div>
                 </h1>
             </div>

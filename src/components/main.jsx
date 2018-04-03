@@ -25,11 +25,21 @@ class Main extends React.Component {
     }
 
     buttonPressed( ) {
-        console.log("beep")
-        if (this.state !== 7) {
+        console.log("beep") 
+        if (this.state.folioNumber !== 7) {
             this.setState((state) => ({folioNumber: state.folioNumber + 1 }))
-        } 
+        } else {
+            this.setState((state) => ({ folioNumber:  1 }))
+        }
         console.log(this.state.folioNumber)
+    }
+
+    forwarButtonPressed( ) {
+       
+// not working 
+       if (this.state.folioNumber !== 0 ) {
+           this.setState((state) => ({folioNumber: state.folioNumber +1 }))
+       }
     }
 
     render() {
@@ -40,7 +50,7 @@ class Main extends React.Component {
     )
         return (
             <div  id="top-level-home-container">
-                < LeftComponent  action={this.imageDisplayChange} back={this.buttonPressed} forward={this.props.back}/>
+                < LeftComponent  action={this.imageDisplayChange} back={this.buttonPressed} forward={this.forwarButtonPressed}/>
                 <CSSTransitionGroup
                     transitionEnter={true}
                     transitionName="introduction"

@@ -10,7 +10,9 @@ class ImageContainer extends React.Component {
          this.folioOneRender = this.folioOneRender.bind(this)
     }
 
-   
+
+
+    
 
 
     folioOneRender(image) {
@@ -23,11 +25,11 @@ class ImageContainer extends React.Component {
 
     render() {
 
-       const portfolioOne = ["./images/sophie.jpg"]
+       const portfolioOne = ["","./images/sophie.jpg","./images/fashion.jpg"]
 
         return (
             <div>
-                    {this.folioOneRender(portfolioOne[0])}
+                    {this.folioOneRender(portfolioOne[this.props.number])}
             </div>
         );
     }
