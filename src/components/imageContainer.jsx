@@ -5,15 +5,25 @@ class ImageContainer extends React.Component {
         super(props);
         this.state = { folioOne: false,
          folioTwo: false};
+
+         this.folioOneRender = this.folioOneRender.bind(this)
     }
 
     portfolioOne = []
 
 
+    folioOneRender(image) {
+        return ( 
+            <div id="picture">
+                <img src={image} alt="portrait on aurther's seat of Sophie" />
+            </div>
+        )
+    }
+
     render() {
         return (
-            <div id="picture">
-            <img src="./images/sophie.jpg" alt="portrait on aurther's seat of Sophie"/>
+            <div>
+                    {this.folioOneRender("./images/sophie.jpg")}
             </div>
         );
     }
